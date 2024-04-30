@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>X O</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/img.png">
+</head>
+<body>
+    <div id="all-content">
+
+        <div id="main-content">
+<!--                    top header-->
+            <div id="header">
+
+                <h2 id="instruction">
+                    x turn
+                </h2>
+            </div>
+            <div id="game-container">
+                <div id="game">
+                    <div id="x-o">
+                        <div class="square square-hvr"  onclick="play(this)" style="border-top:none;border-left:none;">
+                            <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr"  onclick="play(this)" style="border-top:none;">
+                            <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr" onclick="play(this)" style="border-top:none;border-right:none;" >
+                            <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr" onclick="play(this)" style="border-left:none;">
+                            <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr" onclick="play(this)">
+                           <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr" onclick="play(this)" style="border-right:none;">
+                            <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr" onclick="play(this)" style="border-bottom:none;border-left:none;">
+                            <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr" onclick="play(this)" style="border-bottom:none">
+                            <div class="value"></div>
+                        </div>
+                        <div class="square square-hvr" onclick="play(this)" style="border-bottom:none;border-right:none;">
+                            <div class="value"></div>
+                        </div>
+                        <div id="victory" style="display:none;"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div id="footer-content">
+                    <button id="reset-btn" onclick="reset()">reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    <script src="javascript/script.js"></script>
+</html>
